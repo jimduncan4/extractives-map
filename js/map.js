@@ -370,6 +370,9 @@ if(typeof(F1)=='undefined') {F1 = {};}
              self.showVisibleMines();            
          } else if(layer == "Mineral deposits") {
              var classname = "#" + sector + "deposit_control";
+             if(sector == "all" && (visible === undefined || visible === null)) {
+             	visible = !jq("#alldeposit_control").attr("checked")
+             }
              if(visible == true || jq(classname).hasClass("inactive")) {
                  if(sector == "all") {
                     jq.each(jq('#ore_sectors li a'), function(el,index) {
