@@ -350,6 +350,7 @@ if(typeof(F1)=='undefined') {F1 = {};}
                     jq.each(jq('#mines_sectors li a'), function(el,index) {
                         jq(el).removeClass('inactive').addClass('active');
                     })
+                    jq("#allmine_control").attr("checked", true)
                   } else {                 
                      jq(classname).removeClass('inactive').addClass('active');
                   }
@@ -359,8 +360,10 @@ if(typeof(F1)=='undefined') {F1 = {};}
                         jq(el).removeClass('active').addClass('inactive');
                     })
                      self.map.showLayer(self.stylelayers["Oil wells"].guid, false);
+                     jq("#allmine_control").attr("checked", false)
                    } else {                     
-                     jq(classname).removeClass('active').addClass('inactive');                                      
+                     jq(classname).removeClass('active').addClass('inactive');
+                     jq("#allmine_control").attr("checked", false)
                     }
              }
              self.showVisibleMines();            
