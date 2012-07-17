@@ -425,7 +425,9 @@ if(typeof(F1)=='undefined') {F1 = {};}
         if(visibleDeposits.length != 0 ){
             self.map.showLayer(self.stylelayers[layer].guid, true);
             self.map.addFilter(self.stylelayers[layer].guid, 
-                               {expression: self.complexFilterExpression(visibleDeposits, "mineral ty")});             
+                               {expression: self.complexFilterExpression(visibleDeposits, "mineral ty")});
+                               var logexp=self.complexFilterExpression(visibleDeposits, "mineral ty");
+                               log logexp;
         } else {
             self.map.showLayer(self.stylelayers[layer].guid, false);
         }
