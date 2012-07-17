@@ -346,7 +346,7 @@ if(typeof(F1)=='undefined') {F1 = {};}
              if(sector == "all" && (visible === undefined || visible === null)) {
                  visible = !jq("#allmine_control").attr("checked")
              }
-             if(jq(classname).hasClass("inactive")) {
+             if(visible == true || jq(classname).hasClass("inactive")) {
                  if(sector == "all") {
                     jq.each(jq('#mines_sectors li a'), function(el,index) {
                         jq(el).removeClass('inactive').addClass('active');
