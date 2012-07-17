@@ -147,21 +147,13 @@
               <ul class="dropmenu_options">
                 
                 
-                <li><a href="#" onclick="wb.setIndicator('Population Density'); return false">Population Density</a></li>
-                
-                
-                
-                <li><a href="#" onclick="wb.setIndicator('Unemployment Rate'); return false">Unemployment Rate</a></li>
-                
-                
-                
+                <li><a href="#" onclick="wb.setIndicator('Population density'); return false">Population Density</a></li>
+
+		<li><a href="#" onclick="wb.setIndicator('Unemployment Rate'); return false">Unemployment Rate</a></li>
+               
                 <li><a href="#" onclick="wb.setIndicator('Malnutrition'); return false">Malnutrition</a></li>
                 
-                
-                
                 <li><a href="#" onclick="wb.setIndicator('Infant Mortality'); return false">Infant Mortality</a></li>
-                
-                
                 
                 <li><a href="#" onclick="wb.setIndicator('Maternal Health'); return false">Maternal Health</a></li>
               </ul>
@@ -258,11 +250,7 @@
       <li class="eothermine"><a  sector-name="other" original-title="Other" class="active" id="Othermine_control" href="#">4</a></li>
       <li class="eothermine"><a  sector-name="other" original-title="Other" class="active" id="Othermine2_control" href="#">5</a></li>
       
-      <li class="all"><form action="" method="get">
-        <input name="input" id="allmine_control" class="active" type="checkbox" value="" CHECKED/>
-      </form></li>
-      <li id="" class="all">ALL</li>
-      
+     
     </ul>
     <ul id="ore_sectors">
       <li style="margin-left: 11px; margin-right: 11px;">Ores:</li>
@@ -271,22 +259,13 @@
       <li class="ebauxitedeposit"><a  sector-name="bauxite" original-title="Bauxite" class="inactive" id="Bauxitedeposit_control" href="#">3</a></li>
       <li class="eotherdeposit"><a  sector-name="other" original-title="Other" class="inactive" id="Otherdeposit_control" href="#">3</a></li>
       
-      <li class="all"><form action="" method="get">
-        <input name="input" id="alldeposit_control" class="inactive" type="checkbox" value=""./>
-      </form></li>
-      <li id="" class="all">ALL</li>
-      
+  
     </ul> 
     <ul id="oil_sectors">
       <li style="margin-left: 11px; margin-right: 11px;">Oil:</li>
       <li class="eoildeposit"><a  sector-name="oildeposit" original-title="Oil fields" class="active" id="oildeposits_control" href="#">1</a></li>
       <li class="eoilwell"><a  sector-name="oilwell" original-title="Oil wells" class="active" id="oilwells_control" href="#">2</a></li>
-      
-      <li class="all"><form action="" method="get">
-        <input name="input" id="alloil_control" class="active" type="checkbox" value="" CHECKED/>
-      </form></li>
-      <li id="" class="all">ALL</li>
-      
+        
     </ul>              
   </div>
 </div>
@@ -405,7 +384,7 @@
   wb = new F1.WorldBank();
   var projects = [];
       
-  wb.init("152433",  "Ghana", "Extractives in Africa", {projects_count: '39', locations_count: '14', projects: projects, locations_layer: 0, indicators: ['Population Density','Unemployment Rate','Malnutrition','Infant Mortality','Maternal Health'], layers: null, page_type: "country", thematic_area: "extractives_controls"}, false);
+  wb.init("152433",  "Ghana", "Extractives in Africa", {projects_count: '39', locations_count: '14', projects: projects, locations_layer: 0, indicators: ['Population density','Unemployment Rate','Malnutrition','Infant Mortality','Maternal Health'], layers: null, page_type: "country", thematic_area: "extractives_controls"}, false);
   
   }
 </script>
